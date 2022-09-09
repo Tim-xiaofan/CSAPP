@@ -1,5 +1,4 @@
 #include <stdio.h>
-#error "Do not comile"
 
 int fun1(int x1,int x2,int x3,int x4,int x5,int x6,int x7,int x8)
 {
