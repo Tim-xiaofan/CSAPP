@@ -1,3 +1,11 @@
 *.i
 *.o
 ch-01/hello/hello
+ch-02/32-64bits/main
+ch-02/big-little-endian/main
+ch-02/show-bytes/main
+ch-02/2.1 Information Storage/32-64bits/main
+ch-02/2.1 Information Storage/big-little-endian/main
+ch-02/2.1 Information Storage/show-bytes/main
+ch-02/2.1 Information Storage/xor-swap/inplace_swap
+ch-02/2.1 Information Storage/shift-operation/shift
