@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP	Makefile	/^APP = decode_encode$/;"	m
+B2T	decode_encode.cpp	/^	int64_t B2T(const string& bits)$/;"	f	namespace:decode_encode
+B2U	decode_encode.cpp	/^	uint64_t B2U(const string& bits)$/;"	f	namespace:decode_encode
+O2B	decode_encode.cpp	/^	string O2B(int64_t i)$/;"	f	namespace:decode_encode
+S2B	decode_encode.cpp	/^	string S2B(int64_t i)$/;"	f	namespace:decode_encode
+SRCS-y	Makefile	/^SRCS-y := decode_encode.cpp decode_encode.h main.cpp$/;"	m
+T2B	decode_encode.cpp	/^	string T2B(int64_t i)$/;"	f	namespace:decode_encode
+bit2int	decode_encode.h	19;"	d
+bit_add	decode_encode.h	/^	static inline bit_t bit_add(bit_t a, bit_t b, bit_t &sum)$/;"	f	namespace:decode_encode
+bit_and	decode_encode.h	/^	static inline bit_t bit_and(bit_t a, bit_t b)$/;"	f	namespace:decode_encode
+bit_xor	decode_encode.h	/^	static inline bit_t bit_xor(bit_t a, bit_t b)$/;"	f	namespace:decode_encode
+decode_encode	decode_encode.cpp	/^namespace decode_encode$/;"	n	file:
+decode_encode	decode_encode.h	/^namespace decode_encode$/;"	n
+increase_bits	decode_encode.cpp	/^	static void increase_bits(string & bits)$/;"	f	namespace:decode_encode
+int_strs	main.cpp	/^static array<string, 4> int_strs= {"0001", "0101", "1011", "1111"};$/;"	v	file:
+ints	main.cpp	/^static array<int, 4> ints= {8, -8, -1, 0};$/;"	v	file:
+is_bit	decode_encode.cpp	/^	is_bit(int c)$/;"	f	namespace:decode_encode
+main	main.cpp	/^int main()$/;"	f
+pow_of_2	decode_encode.cpp	/^	static uint64_t pow_of_2(uint64_t n)$/;"	f	namespace:decode_encode
