@@ -69,6 +69,7 @@ B2b(void *bytes, size_t n)
 
 int main()
 {
+	cout << "Little endian:"<< std::boolalpha << is_little_endien() << endl;
 	for(string &bits:int_strs)
 	{
 		cout << "B2U("<< bits<< "):" << B2U(bits) << endl;
