@@ -1,5 +1,6 @@
 *.i
 *.o
+tags
 ch-01/hello/hello
 ch-02/32-64bits/main
 ch-02/big-little-endian/main
