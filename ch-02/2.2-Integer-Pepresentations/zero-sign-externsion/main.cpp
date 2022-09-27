@@ -124,5 +124,9 @@ int main()
 		tmp = fun2(i);
 		cout << dump_bytes(&tmp, sizeof(tmp)) << '\n';
 	}
+
+	cout << endl;
+	int i = -2;
+	printf("(%d << 2) = %d\n", i, i << 2);
 	return 0;
 }
