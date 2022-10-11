@@ -42,12 +42,22 @@ tadd_ok(short a, short b)
 		(a < 0 && b < 0 && static_cast<short>(a + b) > 0));
 }
 
+/* Determine whether arguments can be added without overflow */
+/* WARNING: This code is buggy. */
+static bool
+tsub_ok(short a, short b)
+{
+	return tadd_ok(a, -b);
+}
+
 int main()
 {
 	cout << "In short:\n";
 	unsigned us = 32768; 
 	int i = -us;
 	cout << i << endl;
+
+	cout << "**** Addition ****" << endl;
 	cout << "TMax:" << TMax << endl;
 	cout << "TMin:" << TMin << endl;
 	cout << "TMax + 1:" << static_cast<short>(TMax + (short)1) << endl;
@@ -70,5 +80,11 @@ int main()
 	cout << "-30000 + -30000 add ok? " << 
 		std::boolalpha << tadd_ok(-30000, -30000) << endl;
 
+	cout << "**** Subtraction ****" << endl;
+	cout << "-TMin:" << static_cast<short>(-TMin) << endl;
+	cout << "-1 - TMin:" << static_cast<short>(-1 - TMin);
+	cout <<":" << std::boolalpha << tsub_ok(-1, TMin) << endl;
+	cout << "1 - TMin:" << static_cast<short>(1 - TMin);
+	cout <<":" << std::boolalpha << tsub_ok(1, TMin) << endl;
 	return 0;
 }
